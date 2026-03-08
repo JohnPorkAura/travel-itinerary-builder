@@ -58,9 +58,9 @@ HTML_PAGE = """<!DOCTYPE html>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --acc:#00e6d2;
-  --acc2:#00bfad;
-  --bg:#040d0f;
+  --acc:#f5c842;
+  --acc2:#e8b830;
+  --bg:#09080a;
   --s1:color-mix(in srgb,var(--bg) 60%,#111);
   --s2:color-mix(in srgb,var(--bg) 40%,#1a1a1a);
   --s3:color-mix(in srgb,var(--bg) 20%,#222);
@@ -525,7 +525,7 @@ footer{
 const APP = {
   name:           'Travel Itinerary Builder',
   mode:           'fastapi',          // 'html' or 'fastapi'
-  auth:           false,    // true | false
+  auth:           true,    // true | false
   systemPrompt:   "You are an expert Travel Itinerary Builder assistant. Tell us your destination, trip length, budget, and interests. Get a day-by-day itinerary with recommendations.",
   promptTemplate: "Destination: {{destination}}\\nDuration: {{duration}}\\nBudget: {{budget}}\\nInterests: {{interests}}",
   resultFormat:   'steps', // text | list | steps
